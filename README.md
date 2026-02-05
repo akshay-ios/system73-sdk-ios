@@ -1,118 +1,165 @@
-📦 PolyNetSDK XCFramework Integration
+## Overview System73 iOS SDK
 
-PolyNetSDK Package is a Swift Package that bundles:
+Supported platforms:
 
-✅ PolyNetSDK XCFramework
+-   iOS 13.0 and later
+-   tvOS 13.0 and later
 
-✅ WebRTC (iOS & tvOS)
+macOS is currently not supported.
 
-✅ Starscream
+------------------------------------------------------------------------
 
-✅ SwiftProtobuf
+## Requirements
 
-It is distributed via Swift Package Manager (SPM) and works seamlessly with Xcode 26.2.
+-   Xcode 26.2 or newer
+-   Swift 6.2 or newer
+-   iOS deployment target 13.0 or greater
+-   tvOS deployment target 13.0 or greater
 
-📋 Requirements
+The SDK is compiled using Swift 6.2.3.
 
-📱 iOS 13.0+
+------------------------------------------------------------------------
 
-📺 tvOS 13.0+
+## Installation
 
-🧠 Swift 6.2+
+### Swift Package Manager (Recommended)
 
-🛠️ Xcode 26.2+
+1.  Open your project in Xcode 
+2.  Go to File → Add Package Dependencies
+3.  Enter the repository URL:
 
-⚠️ The SDK is compiled with Swift 6.2.3, so it must be consumed using Xcode 26.2 or newer.
-
-🚀 Installation
-Swift Package Manager (Recommended)
-
-Open your project in Xcode 26.2
-
-Go to File → Add Package Dependencies
-
-Enter the repository URL:
-
+```{=html}
 https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
+```
+4.  Select version 5.2.2 or choose branch == main
+5.  Add the package to your app target
 
+Xcode will automatically resolve and link all required components.
 
-Select Version: 5.2.2
+------------------------------------------------------------------------
 
-Add the package to your target
+## Import
 
-✅ Xcode will automatically resolve and link all required dependencies.
+Import PolyNetSDK in your Swift file:
 
-🛠 Usage
+``` swift
+import PolyNetPackage
+```
 
-Simply import the package wherever needed:
+------------------------------------------------------------------------
 
+## Initialization
+
+Initialize the SDK during application startup.
+
+Example:
+
+``` swift
 import PolyNetPackage
 
+final class SDKManager {
 
-All bundled frameworks and dependencies are included automatically:
+    static let shared = SDKManager()
 
-✅ PolyNetSDK
+    func initialize() {
+        // Add actual SDK initialization here if required
+        print("PolyNetSDK initialized successfully")
+    }
+}
+```
 
-✅ WebRTC
+Call during app launch:
 
-✅ Starscream
+``` swift
+SDKManager.shared.initialize()
+```
 
-✅ SwiftProtobuf
+------------------------------------------------------------------------
+
+## Included Components
+
+The package includes the following frameworks:
+
+-   PolyNetSDK (Core SDK)
+-   WebRTC (Real-time communication)
+-   Starscream (WebSocket support)
+-   SwiftProtobuf (Protocol serialization)
 
 No additional setup is required.
 
-🗂 Project Structure
-Component    Description
-PolyNetSDK.xcframework    Main SDK supporting iOS & tvOS
-WebRTC    Real-time communication
-Starscream    WebSocket support
-SwiftProtobuf    Protocol Buffers integration
-📦 XCFramework Slices
+## Architecture Support
 
-PolyNetSDK.xcframework includes:
+PolyNetSDK.xcframework supports:
 
-iOS
+iOS: - arm64 (devices) - arm64 and x86_64 (simulator)
 
-ios-arm64
+tvOS: - arm64 (devices) - x86_64 (simulator)
 
-ios-arm64_x86_64-simulator
+Compatible with both Apple Silicon and Intel systems.
 
-tvOS
+------------------------------------------------------------------------
 
-tvos-arm64
+## Usage
 
-tvos-x86_64-simulator
+After importing the package, all SDK features and bundled frameworks
+become automatically available.
 
-✅ Fully compatible with Apple Silicon & Intel simulators
+``` swift
+import PolyNetPackage
+```
 
-📌 Notes
+No manual framework linking is required.
 
-Ensure your app’s deployment target is set to:
+------------------------------------------------------------------------
 
-iOS 13.0+ or
+## Troubleshooting
 
-tvOS 13.0+
+### Module not found
 
-No manual configuration is required for WebRTC
+If you see:
 
-Built and validated with Xcode 26.2
+No such module 'PolyNetPackage'
 
-📄 License
+Try:
 
-This project is licensed under the appropriate license.
-See the LICENSE file for details.
+-   Clean build folder (Shift + Command + K)
+-   Restart Xcode
+-   Reset package cache (File → Packages → Reset Package Caches)
 
-© Copyright
+### Package resolution failed
 
-Copyright (c) 2025 System73®
+Try:
 
-✨ Support
+-   Verify repository URL
+-   Check internet connection
+-   Delete DerivedData:
 
-For issues, feature requests, or contributions:
+```{=html}
+https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
+```
+    ~/Library/Developer/Xcode/DerivedData
 
-Open a GitHub Issue
+### Swift version compatibility error
 
-Submit a Pull Request
+Ensure:
 
-Thank you for using PolyNetSDK 🚀
+-   Xcode version is 26.2 or newer
+-   Project uses supported Swift version
 
+------------------------------------------------------------------------
+
+## License
+
+See LICENSE file for details.
+
+------------------------------------------------------------------------
+
+## Support
+
+For support or questions:
+
+-   Open a GitHub issue
+
+------------------------------------------------------------------------
+
+© 2026 zero gravity®. All rights reserved.
