@@ -122,6 +122,8 @@ See LICENSE file for details.
 
 ## Support
 
+Please visit system73.com/docs for more information or contact us.
+
 For support or questions:
 
 -   Open a GitHub issue
