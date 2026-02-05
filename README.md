@@ -1,4 +1,4 @@
-## Overview System73 iOS SDK
+## System73 iOS SDK
 
 Supported platforms:
 
@@ -6,8 +6,6 @@ Supported platforms:
 -   tvOS 13.0 and later
 
 macOS is currently not supported.
-
-------------------------------------------------------------------------
 
 ## Requirements
 
@@ -17,8 +15,6 @@ macOS is currently not supported.
 -   tvOS deployment target 13.0 or greater
 
 The SDK is compiled using Swift 6.2.3.
-
-------------------------------------------------------------------------
 
 ## Installation
 
@@ -31,22 +27,18 @@ The SDK is compiled using Swift 6.2.3.
 ```{=html}
 https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
 ```
-4.  Select version 5.2.2 or choose branch == main
+4.  Select version 1.0.0 or choose branch == main
 5.  Add the package to your app target
 
 Xcode will automatically resolve and link all required components.
-
-------------------------------------------------------------------------
 
 ## Import
 
 Import PolyNetSDK in your Swift file:
 
 ``` swift
-import PolyNetPackage
+import PolyNetSDK
 ```
-
-------------------------------------------------------------------------
 
 ## Initialization
 
@@ -55,26 +47,18 @@ Initialize the SDK during application startup.
 Example:
 
 ``` swift
-import PolyNetPackage
+import PolyNetSDK
 
-final class SDKManager {
+ class ViewController: UIViewController {
 
-    static let shared = SDKManager()
+    var polyNet: PolyNet?
 
     func initialize() {
         // Add actual SDK initialization here if required
-        print("PolyNetSDK initialized successfully")
+        polyNet = try PolyNet(manifestUrl: manifestUrlTextField.text!, channelId: channelIdTextField.text!, apiKey: apiKeyTextField.text!, contentSteeringEndpoint: contentSteeringEndpointTextField.text ?? "")
     }
 }
 ```
-
-Call during app launch:
-
-``` swift
-SDKManager.shared.initialize()
-```
-
-------------------------------------------------------------------------
 
 ## Included Components
 
@@ -85,7 +69,8 @@ The package includes the following frameworks:
 -   Starscream (WebSocket support)
 -   SwiftProtobuf (Protocol serialization)
 
-No additional setup is required.
+No additional setup is required.After importing the package, all SDK features and bundled frameworks
+become automatically available.
 
 ## Architecture Support
 
@@ -97,20 +82,6 @@ tvOS: - arm64 (devices) - x86_64 (simulator)
 
 Compatible with both Apple Silicon and Intel systems.
 
-------------------------------------------------------------------------
-
-## Usage
-
-After importing the package, all SDK features and bundled frameworks
-become automatically available.
-
-``` swift
-import PolyNetPackage
-```
-
-No manual framework linking is required.
-
-------------------------------------------------------------------------
 
 ## Troubleshooting
 
@@ -143,16 +114,11 @@ https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
 
 Ensure:
 
--   Xcode version is 26.2 or newer
 -   Project uses supported Swift version
-
-------------------------------------------------------------------------
 
 ## License
 
 See LICENSE file for details.
-
-------------------------------------------------------------------------
 
 ## Support
 
@@ -162,4 +128,4 @@ For support or questions:
 
 ------------------------------------------------------------------------
 
-© 2026 zero gravity®. All rights reserved.
+© 2026 System73®. All rights reserved.
