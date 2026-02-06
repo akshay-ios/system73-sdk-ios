@@ -118,10 +118,9 @@ Ensure:
 
 ## Contact & Support
 
-Please visit [system73.com/docs](https://system73.com/docs)  
-for more information or [contact us](mailto:support@system73.com).
+Please visit [system73.com/docs](https://system73.com/docs)  for more information or [contact us](mailto:support@system73.com)
 
-For support or questions:
+For questions:
 
 - 🐞 **Open a [GitHub Issue](https://github.com/akshay-ios/system73-sdk-ios/issues)**
 
