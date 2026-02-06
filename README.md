@@ -123,6 +123,6 @@ for more information or [contact us](mailto:support@system73.com).
 
 For support or questions:
 
-- 🐞 **Open a [GitHub Issue](https://github.com/OWNER/REPOSITORY/issues)**
+- 🐞 **Open a [GitHub Issue](https://github.com/akshay-ios/system73-sdk-ios/issues)**
 
 © 2026 **System73®**. All rights reserved.
