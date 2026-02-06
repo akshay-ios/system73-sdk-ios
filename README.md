@@ -116,18 +116,13 @@ Ensure:
 
 -   Project uses supported Swift version
 
-## License
+## Contact & Support
 
-See LICENSE file for details.
-
-## Support
-
-Please visit system73.com/docs for more information or contact us.
+Please visit [system73.com/docs](https://system73.com/docs)  
+for more information or [contact us](mailto:support@system73.com).
 
 For support or questions:
 
--   Open a GitHub issue
+- 🐞 **Open a [GitHub Issue](https://github.com/OWNER/REPOSITORY/issues)**
 
-------------------------------------------------------------------------
-
-© 2026 System73®. All rights reserved.
+© 2026 **System73®**. All rights reserved.
