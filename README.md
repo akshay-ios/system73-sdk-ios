@@ -22,7 +22,8 @@ The SDK is compiled using Swift 6.2.3.
 
 1.  Open your project in Xcode 
 2.  Go to File → Add Package Dependencies
-3.  Enter the repository URL:
+3.  Search for the System73 SDK using the repo's URL:
+4.  Enter the repository URL:
 
 ```{=html}
 https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
