@@ -21,15 +21,15 @@ The SDK is compiled using Swift 6.2.3.
 ### Swift Package Manager (Recommended)
 
 1.  Open your project in Xcode 
-2.  Go to File → Add Package Dependencies
+2.  Go to ```File``` → ```Add Package Dependencies```
 3.  Search for the System73 SDK using the repo's URL:
 4.  Enter the repository URL:
 
 ```{=html}
 https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
 ```
-4.  Select version 1.0.0 or choose branch == main
-5.  Add the package to your app target
+5. Next, set the ```Dependency Rule``` to be ```Up to Next Major Version```.
+6.  Add the package to your app target
 
 Xcode will automatically resolve and link all required components.
 
