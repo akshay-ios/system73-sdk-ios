@@ -22,15 +22,24 @@ The SDK is compiled using Swift 6.2.3.
 
 1.  Open your project in Xcode 
 2.  Go to ```File``` → ```Add Package Dependencies```
-3.  <img src="assets/1.png" width="250" />
-4.  Search for the System73 SDK using the repo's URL:
-5.  Enter the repository URL:
+    <p align="left">
+    <img src="assets/1.png" width="250" alt="SPM Installation Steps" />
+    </p>
+3.  Search for the System73 SDK using the repo's URL:
+4.  Enter the repository URL:
 
 ```{=html}
 https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
 ```
+  <p align="left">
+   <img src="assets/2.png" width="600" alt="Repo Steps" />
+  </p>
+  
 5. Next, set the ```Dependency Rule``` to be ```Up to Next Major Version```.
 6.  Add the package to your app target
+  <p align="left">
+   <img src="assets/3.png" width="600" alt="Add Steps" />
+  </p>
 
 Xcode will automatically resolve and link all required components.
 
