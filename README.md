@@ -38,7 +38,7 @@ https://github.com/akshay-ios/System73-SDK-iOS-SPM.git
 5. Next, set the ```Dependency Rule``` to be ```Up to Next Major Version```.
 6.  Add the package to your app target
   <p align="left">
-   <img src="assets/3.png" width="600" alt="Add Steps" />
+   <img src="assets/addtarget.png" width="600" alt="Add Steps" />
   </p>
 
 Xcode will automatically resolve and link all required components.
