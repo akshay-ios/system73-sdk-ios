@@ -7,6 +7,7 @@ let package = Package(
     name: "system73-sdk-ios",
     products: [
             // Products define the executables and libraries a package produces, making them visible to other packages.
+        // testing with xcode26.3
             .library(
                 name: "PolyNetSDK",
                 targets: ["PolyNetSDK"]
@@ -29,13 +30,13 @@ let package = Package(
             ),
             .binaryTarget(
                 name: "Starscream",
-                url:"https://artifacts.s73cloud.com/repository/maven-s73-releases/s73-polynet-plat/polynet-ios-starscream-xcframework/4.0.8.03.01.2026/polynet-ios-starscream-xcframework-4.0.8.03.01.2026.zip",
-                checksum: "ee75df480afee8b7aeda21189f71f8bfb8c13e8e254bff8f73be5c44c5e64b6d"
+                url:"https://artifacts.s73cloud.com/repository/maven-s73-releases/s73-polynet-plat/polynet-ios-starscream-xcframework/4.0.8.11.02.2026/polynet-ios-starscream-xcframework-4.0.8.11.02.2026.zip",
+                checksum: "4b590f7e13a302966ce647e9ef3caa62652eab53dd290bc540560987a886f767"
             ),
             .binaryTarget(
                 name: "SwiftProtobuf",
-                url:"https://artifacts.s73cloud.com/repository/maven-s73-releases/s73-polynet-plat/polynet-ios-swift-protobuf-xcframework/1.26.0.03.01.2026/polynet-ios-swift-protobuf-xcframework-1.26.0.03.01.2026.zip",
-                checksum: "cd783820f3ed183ca756fc45e6ae14a3eaf2b46c2e48f8b0212662a2b7dbb301"
+                url:"https://artifacts.s73cloud.com/repository/maven-s73-releases/s73-polynet-plat/polynet-ios-swift-protobuf-xcframework/1.26.0.11.02.2026/polynet-ios-swift-protobuf-xcframework-1.26.0.11.02.2026.zip",
+                checksum: "201d4700e4fac2b9b71a28164b17ce7f8dbd402d70c34f9f7e6d761a3bed2db7"
             )
         ]
 )
